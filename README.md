@@ -1,14 +1,6 @@
 # MMM-AutelisPentair
 MagicMirror2 module for Autelis Pool Control for Pentair
 
-Examples
-  
- MagicMirror/modules
- ![](Capture.jpg)
-  
- git clone https://github.com/cowboysdude/MMM-History
- ![](Capture2.jpg)
-  
  # Installation
      ~MagicMirror/modules
      `git clone https://github.com/emlowe/MMM-AutelisPentair.git`
