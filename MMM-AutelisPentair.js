@@ -1,11 +1,10 @@
 /* Module */
 
 /* Magic Mirror
- * Module: MMM-HTTPRequestDisplay
+ * Module: MMM-AutelisPentair
  *
- * By Eunan Camilleri eunancamilleri@gmail.com
- * v1.0 23/06/2016
- * MIT Licensed.
+ * By Earle Lowe elowe@elowe.com
+ * Apache Licensed.
  */
 
 Module.register("MMM-AutelisPentair",{
@@ -123,15 +122,18 @@ Module.register("MMM-AutelisPentair",{
 
 			}
 
+			var airsolTemp = document.createElement("div");
+			airsolTemp.className = "light medium";
+			large.appendChild(airsolTemp);
+
 			var airTemp = document.createElement("span");
-			airTemp.className = "light airTemp medium";
 			airTemp.innerHTML = "Air: " + this.poolData.temp[0].airtemp[0] + "&deg; ";
-			large.appendChild(airTemp);
+			airsolTemp.appendChild(airTemp);
 
 			var solTemp = document.createElement("span");
-			solTemp.className = "light solTemp medium";
+			solTemp.className = "solTemp";
 			solTemp.innerHTML = "Solar: " + this.poolData.temp[0].soltemp[0] + "&deg;";
-			large.appendChild(solTemp);
+			airsolTemp.appendChild(solTemp);
 		}
 
 		wrapper.appendChild(large);
