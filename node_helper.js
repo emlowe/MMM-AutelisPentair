@@ -1,5 +1,9 @@
 /* Magic Mirror
  * 
+ * Node Helper for MMM-AutelisPentair module
+ *
+ * Earle Lowe elowe@elowe.com
+ * Apache License
  */
 const NodeHelper = require('node_helper');
 const request = require('request');
