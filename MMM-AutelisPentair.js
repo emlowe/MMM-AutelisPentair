@@ -33,11 +33,6 @@ Module.register("MMM-AutelisPentair",{
         return ['font-awesome.css'];
     },
 
-	// Define required scripts.
-//	getScripts: function() {
-//		return ["MMM-AutelisPentair.css"];
-//	},
-
 	getData: function() {
 		Log.info("Getting Data");
 		this.sendSocketNotification("GET_DATA");
@@ -155,6 +150,5 @@ Module.register("MMM-AutelisPentair",{
 		var self = this;
 		setTimeout(function() { self.getData(); }, nextLoad);
 	},
-
 
 });
