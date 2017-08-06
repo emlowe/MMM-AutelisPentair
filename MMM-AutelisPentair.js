@@ -30,7 +30,7 @@ Module.register("MMM-AutelisPentair",{
 	},
 
     getStyles: function() {
-        return ['font-awesome.css'];
+        return ['font-awesome.css', "MMM-AutelisPentair.css"];
     },
 
 	getData: function() {
@@ -62,6 +62,8 @@ Module.register("MMM-AutelisPentair",{
 
 			return wrapper;
 		}
+
+		wrapper.className = "MMM-AutelisPentair";
 
 		var large = document.createElement("div");
 		large.className = "medium light";
@@ -98,6 +100,7 @@ Module.register("MMM-AutelisPentair",{
 					var pumpInfo= document.createElement("div");
 					pumpInfo.className = "bright small pumpInfo";
 					pumpInfo.innerHTML = "Pump: " + pumpWatts + " Watts, " + pumpSpeed + " RPM";
+					
 					large.appendChild(pumpInfo);
 				}
 
@@ -118,7 +121,7 @@ Module.register("MMM-AutelisPentair",{
 			}
 
 			var airsolTemp = document.createElement("div");
-			airsolTemp.className = "light medium";
+			airsolTemp.className = "light medium airsolTemp";
 			large.appendChild(airsolTemp);
 
 			var airTemp = document.createElement("span");
