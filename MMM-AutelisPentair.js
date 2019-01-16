@@ -71,6 +71,7 @@ Module.register("MMM-AutelisPentair",{
 		if (this.poolData) {
 			poolStatus = this.poolData.equipment[0].circuit6[0];
 			spaStatus = this.poolData.equipment[0].circuit1[0];
+			var poolString = "";
 	
 			var poolTemp = document.createElement("span");
 
